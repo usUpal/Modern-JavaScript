@@ -24,6 +24,25 @@
    people.forEach(i => {
        console.log(i)
    })
+   
    ```
 
-6. 
+## Object 
+
+1. ```javascript
+   // object literals
+   let user = {
+       name : 'upal',
+       email: 'udyan.upal@northsouth.edu',
+       id: '1821359042',
+       login(id){
+           console.log(`${id} just logged in`)
+       }
+   }
+   console.log(user.name)
+   console.log(user.email)
+   console.log(user.id)
+   console.log(user.login(''))
+   ```
+
+2. 
