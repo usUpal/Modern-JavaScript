@@ -1,1 +1,6 @@
-console.log('hello')
+const para0 = document.querySelector('.hello')
+const para1 = document.querySelector('.lorem')
+const para2 = document.querySelector('.error')
+console.log(para0)
+console.log(para1)
+console.log(para2)
