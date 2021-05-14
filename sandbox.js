@@ -1,18 +1,16 @@
-//get element by id
-const title = document.getElementById('title')
-console.log(title);
+document.querySelector('.name').innerText = 'Steve Jobs'
+document.querySelector('.details').innerText = 'sjldfgb sdjhfkjhasdgf kjasdhfgjklhs askdjghfklja sd'
 
-// get element by class
-const errors = document.getElementsByClassName('error')
-console.log(errors);
-for(let i = 0; i< errors.length; i++){
-    console.log(errors[i]);
-}
 
-// get element by TAG
+const paras = document.querySelectorAll('.error')
+paras.forEach(element => {
+    element.innerText += ' **remove err pls'
+})
 
-const paras = document.getElementsByTagName('p')
-console.log(paras);
-for(let i = 0; i< paras.length; i++){
-    console.log(paras[i]);
-}
+const content = document.querySelector('.content')
+  
+content.innerHTML = '<p><b>this is content</b></p>'
+const people = ['upal', 'elon', 'steve']
+people.forEach(element => {
+    content.innerHTML += `<p>${element}</p>`
+})
