@@ -1,8 +1,7 @@
-const link = document.querySelector('a')
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.facebook.com')
-link.innerText = 'facebook'
+const style = document.querySelector('h1')
 
-const err = document.querySelector('p')
-console.log(err.getAttribute('class'))
-err.setAttribute('class', 'class1')
+console.log(style.style.color) // brown
+style.style.margin = '55px'
+style.style.color = 'crimson'
+style.style.fontFamily = 'consolas'
+
