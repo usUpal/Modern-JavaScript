@@ -1,16 +1,18 @@
-// const para0 = document.querySelector('.hello')
-// const para1 = document.querySelector('.lorem')
-// const para2 = document.querySelector('.error')
-// const para3 = document.querySelector('div.error')
-// console.log(para0)
-// console.log(para1)
-// console.log(para2)     
-// console.log(para3)     
-const paras = document.querySelectorAll('p')
-const errors = document.querySelectorAll('.error')
-paras.forEach((para) => {
-    console.log(para);
-})
-errors.forEach((error) =>{
-    console.log(error);
-})
+//get element by id
+const title = document.getElementById('title')
+console.log(title);
+
+// get element by class
+const errors = document.getElementsByClassName('error')
+console.log(errors);
+for(let i = 0; i< errors.length; i++){
+    console.log(errors[i]);
+}
+
+// get element by TAG
+
+const paras = document.getElementsByTagName('p')
+console.log(paras);
+for(let i = 0; i< paras.length; i++){
+    console.log(paras[i]);
+}
