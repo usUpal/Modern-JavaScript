@@ -1,7 +1,4 @@
-const style = document.querySelector('h1')
-
-console.log(style.style.color) // brown
-style.style.margin = '55px'
-style.style.color = 'crimson'
-style.style.fontFamily = 'consolas'
-
+const content = document.querySelector('p')
+console.log(content.classList);
+content.classList.add('success')
+content.classList.remove('success')
